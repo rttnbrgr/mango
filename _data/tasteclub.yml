@@ -8,22 +8,22 @@ members:
 	instagram: 'trdwst', 
 	soundcloud: 'struct-la)' 
 }
-- {id: 2, 
-	name: Mack, 
-	blurb: 'Trill Gates. Edgar Allen Dro. The Black Zac Efron.', 
-	twitter: 'hatetheshark',
-	instagram: 'trdwstmack', 
-	soundcloud: 'chopped-waves)' 
-# chopped-waves, chuckbyoungbahgeera, the-shark-tank, youngmack-3
-}
+# - {id: 2, 
+# 	name: Mack, 
+# 	blurb: 'Trill Gates. Edgar Allen Dro. The Black Zac Efron.', 
+# 	twitter: 'hatetheshark',
+# 	instagram: 'trdwstmack', 
+# 	soundcloud: 'chopped-waves)' 
+# # chopped-waves, chuckbyoungbahgeera, the-shark-tank, youngmack-3
+# }
 
-- {id: 3, 
-	name: KiiD, 
-	blurb: 'King Solo Jonez. Blvk Bvrt.', 
-	twitter: 'AboveAvg_swag',
-	instagram: 'solo_jonez', 
-	soundcloud: 'blvk-bvrt)'
-}
+# - {id: 3, 
+# 	name: KiiD, 
+# 	blurb: 'King Solo Jonez. Blvk Bvrt.', 
+# 	twitter: 'AboveAvg_swag',
+# 	instagram: 'solo_jonez', 
+# 	soundcloud: 'blvk-bvrt)'
+# }
 
 member-photo: 'avi1.jpg'
 member-name: 'Struct'
