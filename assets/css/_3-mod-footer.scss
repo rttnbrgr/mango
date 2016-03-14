@@ -1,10 +1,19 @@
+
+%border--style {
+	border: 2px solid white;
+}
+
+
 // Header
 header {
-	@include center(x);
-	@include position(fixed, 0 null null);
+	// @include center(x);
+	// @include position(fixed, 0 null null);
+	// @include position(fixed, 0 0 null);
 	z-index: 2;
+	position: relative;
 	
 	h1 {
+		@include center(x);
 		color: white;
 		line-height: 1;
 		border: 3px solid white;
@@ -14,6 +23,39 @@ header {
 	}
 }
 
+.brand,
+h1.fun {
+	position: absolute;
+	@include center(x);
+	color: white;
+	line-height: 1;
+	@extend %border--style;
+	padding: 0.3em 1em;
+	font-size: 1em;
+	margin-top: 1em;
+	@include transition(all, 0.3s linear);
+	// color: purple;
+
+	&:hover {
+		background-color: white;
+		color: $pizelex1;
+
+	}
+
+
+}
+
+
+%border--style {
+	border: 2px solid white;
+}
+
+
+
+
+
+
+
 // Footer
 footer {
 	@include position(fixed, null 0 0);
@@ -22,3 +64,4 @@ footer {
 	width: 100%;
 	// display: none;
 }
+

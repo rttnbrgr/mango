@@ -4,32 +4,25 @@
 // 0 - Tools
 ////////////////////////////////////////
 
-
 // Normalize
 @import "0-normalize";
 // Bourbon
 @import "bourbon/bourbon";
 
 
-////////////////////////////////////////
-// 1 - Config
-////////////////////////////////////////
-
-// VARS & BITS
-
-// 
-
-
 
 ////////////////////////////////////////
+// 1 - Config && 
 // 2 - Base
 ////////////////////////////////////////
 
-
+// VARS & BITS
+@import '1-bits';
 // Mixins
 @import "2-mixins";
 // Base
 @import "2-base";
+
 
 
 
@@ -62,26 +55,26 @@ a {
 ////////////////////////////////////////
 
 // Header
-header {
-	@include center(x);
-	@include position(fixed, 0 null null);
-	z-index: 2;
+// header {
+// 	@include center(x);
+// 	@include position(fixed, 0 null null);
+// 	z-index: 2;
 	
-	h1 {
-		color: white;
-		line-height: 1;
-		border: 3px solid white;
-		padding: 0.3em 1em;
-		font-size: 1em;
-		margin-top: 1em;
-	}
+// 	h1 {
+// 		color: white;
+// 		line-height: 1;
+// 		border: 3px solid white;
+// 		padding: 0.3em 1em;
+// 		font-size: 1em;
+// 		margin-top: 1em;
+// 	}
 
-}
+// }
 
 // Members
 @import "mod-members";
 
-// Footers
+// Header & Footers
 @import '3-mod-footer';
 
 
