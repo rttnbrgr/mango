@@ -11,38 +11,33 @@ header {
 	// @include position(fixed, 0 0 null);
 	z-index: 2;
 	position: relative;
-	
-	h1 {
-		@include center(x);
-		color: white;
-		line-height: 1;
-		border: 3px solid white;
-		padding: 0.3em 1em;
-		font-size: 1em;
-		margin-top: 1em;
-	}
+	text-align: center;
+		
 }
 
 .brand,
 h1.fun {
-	position: absolute;
-	@include center(x);
+	// position: absolute;
+	// @include center(x);
+	display: inline-block;
+	
+	padding: 0.4em 1em;
+	margin: 1em null;
+	@extend %border--style;
+	
+
 	color: white;
 	line-height: 1;
-	@extend %border--style;
-	padding: 0.3em 1em;
 	font-size: 1em;
-	margin-top: 1em;
+	font-weight: 400;
+	
 	@include transition(all, 0.3s linear);
 	// color: purple;
 
 	&:hover {
 		background-color: white;
 		color: $pizelex1;
-
 	}
-
-
 }
 
 
@@ -62,6 +57,11 @@ footer {
 	padding: 2rem 0;
 	text-align: center;
 	width: 100%;
-	// display: none;
+	display: none;
 }
 
+svg.logo {
+	@include size(2rem auto);
+	margin: 0.5rem auto;
+	fill: white;
+}

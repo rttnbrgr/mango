@@ -20,32 +20,11 @@
 @import '1-bits';
 // Mixins
 @import "2-mixins";
-// Base
+// Base & Typography
 @import "2-base";
 
-
-
-
-/* apply a natural box layout model to all elements, but allowing components to change */
-html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
-
-html {
-	font-size: 16px;
-}
-
-// typography
-body {
-	font-family: "letter-gothic-std", monospace;	
-	// font-family: 'Inconsolata', monospace;
-	color: white;
-	font-size: 100%;
-}
-
-
-a {
-	text-decoration: none;
-	color: inherit;
+%border--style {
+	border: 2px solid white;
 }
 
 
@@ -54,46 +33,21 @@ a {
 // 3 - Modules
 ////////////////////////////////////////
 
-// Header
-// header {
-// 	@include center(x);
-// 	@include position(fixed, 0 null null);
-// 	z-index: 2;
-	
-// 	h1 {
-// 		color: white;
-// 		line-height: 1;
-// 		border: 3px solid white;
-// 		padding: 0.3em 1em;
-// 		font-size: 1em;
-// 		margin-top: 1em;
-// 	}
-
-// }
-
 // Members
-@import "mod-members";
+@import "3-mod-members";
 
 // Header & Footers
 @import '3-mod-footer';
 
 
-
-
-
-
-
-h2 {
-	text-transform: uppercase;
+.bp-test {
+	@include position(fixed, null 0 0);
 	display: block;
-	line-height: 1;
-	margin: 0;
-	font-size: .6rem;
-	letter-spacing: 3px;
-}
-
-svg.logo {
-	@include size(2rem auto);
-	margin: 0.5rem auto;
-	fill: white;
+	height: 5px;
+	background-color: $haze1;
+	@include MQ(XS) { background-color: $haze2;}
+	@include MQ(S)  { background-color: $haze1;}
+	@include MQ(M)  { background-color: $haze2;}
+	@include MQ(L)  { background-color: $haze1;}
+	display: none;
 }

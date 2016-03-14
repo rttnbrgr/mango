@@ -1,16 +1,27 @@
-{% for member in site.data.tasteclub.members %}
-<div class="member member-{{member.id}}">
-  <div class="member--wrapper">
-    <img src="assets/img/avi{{member.id}}.jpg" alt="{{member.name}}" class="member--avatar">
-    <h2 class="member--name">{{member.name}}</h2>
-    <p class="member--blurb">{{member.blurb}}</p>
+<div class="member--container">
 
-    <div class="member--social-wrapper">
-      <a href="mailto:{{site.data.members.member-email}}"   target="_blank" class="social--link"><i class="fa fa-envelope"></i></a>
-      <a href="http://twitter.com/{{member.twitter}}"       target="_blank" class="social--link"><i class="fa fa-twitter"></i></a>
-      <a href="http://instagram.com/{{member.instagram}}"   target="_blank" class="social--link"><i class="fa fa-instagram"></i></a>
-      <a href="http://soundcloud.com/{{member.soundcloud}}" target="_blank" class="social--link"><i class="fa fa-soundcloud"></i></a>
-    </div>
+  {% for member in site.data.tasteclub.members %}
+  <div class="member member-{{member.id}}">
+    <!-- <div class="member--wrapper"> -->
+      <img src="assets/img/avi{{member.id}}.jpg" alt="{{member.name}}" class="member--avatar">    
+      <!-- <div class="member--avatar"></div> -->
+      <h2 class="member--name">{{member.name}}</h2>
+      <p class="member--blurb">{{member.blurb}}</p>
+
+      <div class="member--social-wrapper">
+        <a href="mailto:{{site.data.members.member-email}}"   target="_blank" class="social--link"><i class="fa fa-envelope"></i></a>
+        <a href="http://twitter.com/{{member.twitter}}"       target="_blank" class="social--link"><i class="fa fa-twitter"></i></a>
+        <a href="http://instagram.com/{{member.instagram}}"   target="_blank" class="social--link"><i class="fa fa-instagram"></i></a>
+        <a href="http://soundcloud.com/{{member.soundcloud}}" target="_blank" class="social--link"><i class="fa fa-soundcloud"></i></a>
+      </div>
+    <!-- </div> -->
   </div>
+  {% endfor %}
+
 </div>
-{% endfor %}
+
+<nav class="member--nav">
+  <a href="#" class="member--nav--link" data-member="1"></a>
+  <a href="#" class="member--nav--link" data-member="2"></a>
+  <a href="#" class="member--nav--link" data-member="3"></a>
+</nav>

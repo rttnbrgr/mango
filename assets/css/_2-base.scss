@@ -12,10 +12,28 @@ body {
 	// font-family: 'Inconsolata', monospace;
 	color: white;
 	font-size: 100%;
+	@include background(linear-gradient($pizelex1, $pizelex2) bottom);
 }
 
 
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+
+
+
+h2 {
+	text-transform: uppercase;
+	display: block;
+	line-height: 1;
+	margin: 0;
+	font-size: .6rem;
+	letter-spacing: 3px;
+}
+
+
+.brand {
+	
 }
