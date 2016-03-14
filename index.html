@@ -6,18 +6,21 @@
 {% include head.html %}
 <body>  
 
-<header>
-	<h1>TRDWST</h1>
-</header>
+	<header>
+		<h1>TRDWST</h1>
+	</header>
 
-<div class="container">
-  {% include members.html %}
-</div>
+	<div class="container">
+	  {% include members.html %}
+	</div>
 
-{% include footer.html %}
+	<footer>
+		<h2>Tasteclub Labs</h2>
+		{% include icon-logo-simple.svg %}
+	</footer>
 
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="/bower_components/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
-
 <script>
 
 $(document).ready(function() {
