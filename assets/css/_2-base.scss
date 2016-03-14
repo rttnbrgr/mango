@@ -21,7 +21,8 @@ body {
 	justify-content: space-between;
 	
 	// theme color
-	@include background(linear-gradient($miami1, $miami2) bottom);
+	// @include background(linear-gradient($miami1, $miami2) bottom);
+	@extend %trdwest--gradient;
 
 }
 

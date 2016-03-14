@@ -9,6 +9,7 @@ header {
 	// @include center(x);
 	// @include position(fixed, 0 null null);
 	// @include position(fixed, 0 0 null);
+	margin: 1rem 0 0;
 	z-index: 2;
 	position: relative;
 	text-align: center;
@@ -54,7 +55,7 @@ h1.fun {
 // Footer
 footer {
 	
-	padding: 1rem 0;
+	padding: 1rem 0 2rem;
 	width: 100%;	
 	text-align: center;
 	// now with flexbox

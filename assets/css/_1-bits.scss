@@ -30,3 +30,12 @@ $XS:    23.125em; // 370px;
 $S:     30em; 		// 480px;   
 $M:     48em; 		// 768px;     
 $L:     65.625em; // 1050px;
+
+
+// trdwest theme
+%trdwest--gradient {
+	@include background(linear-gradient(to bottom, $aqua1, $aqua2) center);
+	&__inverse {
+		@include background(linear-gradient(to top, $aqua1, $aqua2) center);
+	}
+}

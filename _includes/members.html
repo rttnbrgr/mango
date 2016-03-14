@@ -3,8 +3,10 @@
   {% for member in site.data.tasteclub.members %}
   <div class="member member-{{member.id}}">
     <!-- <div class="member--wrapper"> -->
-      <img src="assets/img/avi{{member.id}}.jpg" alt="{{member.name}}" class="member--avatar">    
-      <!-- <div class="member--avatar"></div> -->
+      <!-- <div class="member--avatar multiply" ></div> -->
+      <div class="member--avatar--wrapper" >
+        <img src="assets/img/avi{{member.id}}.jpg" alt="{{member.name}}" class="member--avatar">    
+      </div>
       <h2 class="member--name">{{member.name}}</h2>
       <p class="member--blurb">{{member.blurb}}</p>
 

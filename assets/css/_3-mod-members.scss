@@ -70,6 +70,16 @@ $haze2: #5C258D;
 	// intial
 	// background: #114357; /* fallback for old browsers */
 	// @include background(linear-gradient(#F29492, #114357) bottom);
+	overflow: hidden;
+
+	// &::before {
+	// 	content: "";
+	// 	display: block;
+	// 	@include size(100%);
+	// 	position: fixed;
+	// 	background-color: yellow;
+
+	// }
 
 	// theme
 	// &.member-1 {
@@ -118,22 +128,55 @@ $haze2: #5C258D;
 
 }
 
+.member--avatar--wrapper {
+
+	display: inline-block;
+	@include size(6.25rem);
+	overflow: hidden;
+	margin-bottom: 2.8125rem;
+	
+	border-radius: 50%;
+	border: 2px solid white;
+	background: $aqua2;
+	// @include background(linear-gradient(to top, $miami1, $miami2) center);	
+	@extend %trdwest--gradient__inverse;
+
+}
 
 
+img.member--avatar {
+	mix-blend-mode: screen;
+	margin-bottom: 0;
+}
 
 .member--avatar {
 	@include size(100px);
 	display: block;
 	margin: 0 auto 2.8125rem;
 	border-radius: 50%;
-	border: 2px solid white;
+	// border: 2px solid white;
 	
+
+	display: inline-block;
+
 	// attempt to match sketch
-	// @include background(linear-gradient($pizelex1, $pizelex2) bottom);
-	// background-image: url('/assets/img/avi1.jpg');
-	// background-color: #fff;
-	// background-blend-mode: multiply;
-	// background-size: cover;
+	&.multiply {
+		
+		border-color: transparent;
+
+		// @include background(linear-gradient($pizelex1, $pizelex2) bottom);
+		background-image: url('/assets/img/avi1.jpg');
+		// background-color: #fff;
+		background-blend-mode: multiply;
+		background-size: cover;
+		
+		&:before {
+			content: "";
+			@include size(100%);
+			display: block;
+			background-color: pink;
+		}
+	}
 }
 
 
