@@ -1,0 +1,1 @@
+http://labs.rampinteractive.co.uk/touchSwipe/demos/Finger_swipe.html

@@ -1,0 +1,36 @@
+# Members
+members: 
+- {id: 1, 
+	name: Struct, 
+	blurb: The Real Dreamers with soul triumph., 
+	email: 'wetrdwst@gmail.com',
+	twitter: 'trdwst',
+	instagram: 'trdwst', 
+	soundcloud: 'struct-la)' 
+}
+- {id: 2, 
+	name: Mack, 
+	blurb: 'Trill Gates. Edgar Allen Dro. The Black Zac Efron.', 
+	twitter: 'hatetheshark',
+	instagram: 'trdwstmack', 
+	soundcloud: 'chopped-waves)' 
+# chopped-waves, chuckbyoungbahgeera, the-shark-tank, youngmack-3
+}
+
+- {id: 3, 
+	name: KiiD, 
+	blurb: 'King Solo Jonez. Blvk Bvrt.', 
+	twitter: 'AboveAvg_swag',
+	instagram: 'solo_jonez', 
+	soundcloud: 'blvk-bvrt)'
+}
+
+member-photo: 'avi1.jpg'
+member-name: 'Struct'
+member-blurb: 'The Real Dreamers with soul triumph.'
+member-email: 'wetrdwst@gmail.com'
+member-twitter: 'https://twitter.com/trdwst'
+member-instagram: 'https://www.instagram.com/trdwst/'
+member-soundcloud: 'https://soundcloud.com/struct-la)'
+
+

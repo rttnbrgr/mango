@@ -1,0 +1,109 @@
+---
+---
+
+
+// Tools
+@import "1-tools/tools-index";
+
+
+////////////////////////////////////////
+// 0 - Tools
+////////////////////////////////////////
+
+// Normalize
+@import "0-normalize";
+
+
+////////////////////////////////////////
+// 1 - Config
+////////////////////////////////////////
+
+// VARS & BITS
+
+// 
+
+
+
+////////////////////////////////////////
+// 2 - Base
+////////////////////////////////////////
+
+
+// Mixins
+@import "2-mixins";
+// Base
+@import "2-base";
+
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+html {
+	font-size: 16px;
+}
+
+// typography
+body {
+	font-family: "letter-gothic-std", monospace;	
+	// font-family: 'Inconsolata', monospace;
+	color: white;
+	font-size: 100%;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+////////////////////////////////////////
+// 3 - Modules
+////////////////////////////////////////
+
+// Header
+header {
+	@include center(x);
+	@include position(fixed, 0 null null);
+	z-index: 2;
+	
+	h1 {
+		color: white;
+		line-height: 1;
+		border: 3px solid white;
+		padding: 0.3em 1em;
+		font-size: 1em;
+		margin-top: 1em;
+	}
+
+}
+
+// Members
+@import "mod-members";
+
+// Footers
+@import '3-mod-footer';
+
+
+
+
+
+
+
+h2 {
+	text-transform: uppercase;
+	display: block;
+	line-height: 1;
+	margin: 0;
+	font-size: .6rem;
+	letter-spacing: 3px;
+}
+
+svg.logo {
+	@include size(2rem auto);
+	margin: 0.5rem auto;
+	fill: white;
+}

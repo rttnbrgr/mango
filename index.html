@@ -1,0 +1,40 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>  
+
+<header>
+	<h1>TRDWST</h1>
+</header>
+
+<div class="container">
+  {% include members.html %}
+</div>
+
+{% include footer.html %}
+
+<script type="text/javascript" src="/bower_components/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+  
+  // Manually Set State
+  var members = $('.member');
+  // members.first().addClass('prev');
+  // members.last().addClass('next');
+  // members.eq(1).addClass('active');
+
+  $('.nav').on('click.next', function(e){
+    
+  })
+
+
+});
+
+</script>
+</body>
+</html>
