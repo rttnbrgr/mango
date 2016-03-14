@@ -6,14 +6,25 @@ html {
 	font-size: 16px;
 }
 
+
 // typography'
 body {
 	font-family: "letter-gothic-std", monospace;	
 	// font-family: 'Inconsolata', monospace;
 	color: white;
 	font-size: 100%;
-	@include background(linear-gradient($pizelex1, $pizelex2) bottom);
+	
+	// flex stuff
+	@include size(auto 100vh);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	// theme color
+	@include background(linear-gradient($miami1, $miami2) bottom);
+
 }
+
 
 
 a {
@@ -35,5 +46,5 @@ h2 {
 
 
 .brand {
-	
+
 }

@@ -9,10 +9,11 @@ $haze1: #4389A2;
 $haze2: #5C258D;
 
 
+// flex-wrapper for all members
 .member--container {
-	@include background(linear-gradient($aqua1, $aqua2) bottom);
+	// @include background(linear-gradient($aqua1, $aqua2) bottom);
 
-	min-height: 100vh;
+	// min-height: 100vh;
 	// @include size(300% auto);
 	// width: 300%;	
 	display: flex;
@@ -181,7 +182,7 @@ $haze2: #5C258D;
 
 .member--nav {
 	width: 100%;
-	background-color: $pizelex1;
+	// background-color: $pizelex1;
 	text-align: center;
 
 	&--link {
