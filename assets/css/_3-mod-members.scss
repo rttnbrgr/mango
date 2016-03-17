@@ -16,10 +16,13 @@ $haze2: #5C258D;
 	// min-height: 100vh;
 	// @include size(300% auto);
 	// width: 300%;	
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
+	
+	// flex stuff
+	// display: flex;
+	// flex-direction: row;
+	// flex-wrap: nowrap;
+	// align-items: center;
+
 	overflow-x: hidden;
 	background-color: pink;
 }
@@ -55,17 +58,6 @@ $haze2: #5C258D;
 	
 
 
-
-
-
-
-
-
-
-
-
-
-
 	@include transition;
 	@include transform(translateX(0));
 	
@@ -93,6 +85,13 @@ $haze2: #5C258D;
 	// &.member-3 {
 	// 	@include background(linear-gradient($haze1, $haze2) bottom);
 	// }
+
+
+	display: block;
+	position: fixed;
+	width: 100%;
+	@include transform(translateX(50%));
+
 
 	@include MQ(M) {
 		min-height: 0;
@@ -184,14 +183,15 @@ img.member--avatar {
 
 
 
+// OLD
+// .member--wrapper {
+// 	position: absolute;
+// 	width: 100%;
+// 	@include center(y);
+// }
 
-.member--wrapper {
-	position: absolute;
-	width: 100%;
-	@include center(y);
-}
 
-
+// h2
 .member--name {
 	font-size: 2.625rem;
 	font-weight: 700;
@@ -201,6 +201,7 @@ img.member--avatar {
 	margin-bottom: 0.5em;
 }
 
+// paragraph
 .member--blurb {
 	font-size: 1rem;
 	font-weight: normal;
@@ -236,6 +237,11 @@ img.member--avatar {
 		@extend %border--style;
 		display: inline-block;
 		border-radius: 50%;
+
+		&.active {
+			background-color: #fff;
+		}
+
 	}
 
 }

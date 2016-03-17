@@ -9,55 +9,63 @@
 	<header>
 		<h1 class="brand">TRDWST</h1>
 	</header>
+	
+	<div class="hide">
+	{% include members.html %}
+	</div>
+	
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
 
-	{% include members.html %}	
+			{% for member in site.data.tasteclub.members %}
+			<div class="swiper-slide">
+				
+				<!-- Avatar -->
+				<div class="member--avatar--wrapper" >
+        	<img src="assets/img/avi{{member.id}}.jpg" alt="{{member.name}}" class="member--avatar">    
+      	</div>
+
+			</div>			
+			{% endfor %}
+			
+		</div>
+
+		<div class="swiper-pagination"></div>
+	</div>
+
 
 	<footer>
-		<h2>Tasteclub Labs</h2>
-		{% include icon-logo-simple.svg %}
+		<!-- <h2>Tasteclub Labs</h2> -->
+		<!-- {% include icon-logo-simple.svg %} -->
 	</footer>
 
 	<div class="bp-test"></div>
 
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="bower_components/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+<!-- <script type="text/javascript" src="bower_components/jquery-touchswipe/jquery.touchSwipe.min.js"></script> -->
+<!-- <script type="text/javascript" src="assets/js/fbs.js"></script> -->
+<script type="text/javascript" src="bower_components/swiper/dist/js/swiper.js"></script>
+<!-- <script type="text/javascript" src="bower_components/swiper/dist/js/swiper.jquery.js"></script> -->
+
 <script>
 
-$(document).ready(function() {
-  
-  // Manually Set State
-  var members = $('.member');
-  // members.first().addClass('prev');
-  // members.last().addClass('next');
-  // members.eq(1).addClass('active');
-
-  $('.nav').on('click.next', function(e){
+var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
     
-  })
-
-
-});
-
-
-$(function() {      
-  
-  //Enable swiping...
-  $("#members").swipe( {
+    // If we need pagination
+    pagination: '.swiper-pagination',
     
-    // test swipe
-    // console.log('swipe!');
+    // Navigation arrows
+    // nextButton: '.swiper-button-next',
+    // prevButton: '.swiper-button-prev',
     
-    //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      $('footer').text("You swiped " + direction );  
-    },
-    
-    //Default is 75px, set to 0 for demo so any distance triggers swipe
-     threshold:0
-
-  });
-});
+    // And if we need scrollbar
+    // scrollbar: '.swiper-scrollbar',
+  })  
 
 </script>
+
 </body>
 </html>
