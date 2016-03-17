@@ -119,10 +119,15 @@
 	margin-bottom: 2.8125rem;
 	
 	border-radius: 50%;
-	border: 2px solid white;
-	background: $aqua2;
+	
+	// border: 2px solid white;
+	// background: $aqua2;
+	
 	// @include background(linear-gradient(to top, $miami1, $miami2) center);	
 	@extend %trdwest--gradient__inverse;
+	@extend %trdwest--gradient;
+
+	background-size: 100vh;
 
 }
 
