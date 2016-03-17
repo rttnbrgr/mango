@@ -56,9 +56,25 @@
 .hide { display: none; }
 
 
+// Swiper
+
+.swiper-pagination-bullet {
+	background: white;
+	opacity: 0.4;
+
+	&-active {
+		opacity: 1;
+	}
+}
+
 
 .swiper-container {
 	// width: 600px;
-	height: 300px;
+	// height: 300px;
 	width: 100%;
+}
+
+
+.swiper-wrapper {
+	margin-bottom: 1.5rem;
 }

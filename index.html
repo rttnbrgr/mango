@@ -18,11 +18,23 @@
 		<div class="swiper-wrapper">
 
 			{% for member in site.data.tasteclub.members %}
-			<div class="swiper-slide">
+			<div class="swiper-slide member">
 				
 				<!-- Avatar -->
 				<div class="member--avatar--wrapper" >
         	<img src="assets/img/avi{{member.id}}.jpg" alt="{{member.name}}" class="member--avatar">    
+      	</div>
+
+      	<!-- INFO -->
+      	<h2 class="member--name">{{member.name}}</h2>
+      	<p class="member--blurb">{{member.blurb}}</p>
+
+      	<!-- SOCIAL -->
+      	<div class="member--social-wrapper">
+      	  <a href="mailto:{{site.data.members.member-email}}"   target="_blank" class="social--link"><i class="fa fa-envelope"></i></a>
+      	  <a href="http://twitter.com/{{member.twitter}}"       target="_blank" class="social--link"><i class="fa fa-twitter"></i></a>
+      	  <a href="http://instagram.com/{{member.instagram}}"   target="_blank" class="social--link"><i class="fa fa-instagram"></i></a>
+      	  <a href="http://soundcloud.com/{{member.soundcloud}}" target="_blank" class="social--link"><i class="fa fa-soundcloud"></i></a>
       	</div>
 
 			</div>			
