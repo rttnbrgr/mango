@@ -34,7 +34,7 @@ $L:     65.625em; // 1050px;
 
 // trdwest theme
 %trdwest--gradient {
-	@include background(linear-gradient(to bottom, $aqua1, $aqua2) center);
+	@include background(linear-gradient(to top, $aqua1, $aqua2) center);
 	&__inverse {
 		@include background(linear-gradient(to top, $aqua1, $aqua2) center);
 	}

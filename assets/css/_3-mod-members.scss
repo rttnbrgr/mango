@@ -71,31 +71,29 @@
 	// @include transform(translateX(50%));
 
 
-	@include MQ(M) {
+	// @include MQ(M) {		
+	// 	min-height: 0;
+	// 	height: 400px;
+	// 	margin-bottom: 1rem;
 		
-		min-height: 0;
-		height: 400px;
-		margin-bottom: 1rem;
+	// 	&:last-child { margin: 0; }
+	// }
+
+	// @include MQ(L){
+	// 	@include size(32% 600px);
+	// 	max-height: 600px;
+	// 	min-height: 0;
+	// 	margin-right: 2%;
 		
-		&:last-child { margin: 0; }
-	}
+	// 	&:last-child {
+	// 		outline: 2px;
+	// 		margin-right: 0;
+	// 	}
 
-	@include MQ(L){
-		@include size(32% 600px);
-		max-height: 600px;
-		min-height: 0;
-		margin-right: 2%;
-		
-		&:last-child {
-			outline: 2px;
-			margin-right: 0;
-		}
-
-		position: relative;
-		display: block;
-		float: left;
-
-	}
+	// 	position: relative;
+	// 	display: block;
+	// 	float: left;
+	// }
 
 	// &.active {
 	// 	@include transform(translateX(0%));
